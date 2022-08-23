@@ -16,3 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('homepage');
 });
+
+Route::get('/about', function () {
+
+    $data = [
+        'name' => 'Azzurra',
+        'lastname' => 'Graziano'
+    ];
+
+    return view('about', $data);
+});
